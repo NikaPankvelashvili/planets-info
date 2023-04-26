@@ -11,6 +11,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<><Header /></>}>
       <Route path='/' element={<Navigate to={"/mercury/overview"} />} />
+      <Route path='/planets-info' element={<Navigate to={"/mercury/overview"} />} />
+
       <Route path='mercury' element={<PlanetPage color='#419EBB' data={data[0]} />} >
         <Route path='/mercury' element={<Navigate to={"/mercury/overview"} />} />
         <Route path='overview' element={<PlanetInfo color='#419EBB' details={data[0].overview} image={data[0].images.planet} data={data[0]} />} />
