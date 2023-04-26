@@ -1,0 +1,124 @@
+.header-logo {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 28px;
+  user-select: none;
+  line-height: 36px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  /* position: fixed; */
+}
+
+.burger-menu {
+  user-select: none;
+}
+
+.reduced-opacity {
+  opacity: 0.5;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.nav-link {
+  color: gray;
+  list-style: none;
+  font-family: "League Spartan";
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  transition: color 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 100%;
+    padding: 0 50px;
+    margin-top: 39px;
+    margin-bottom: 29px;
+  }
+
+  .nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 0 0 0 70px;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .header-logo {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .header-container {
+    height: 70px;
+    padding-right: 50px;
+  }
+
+  .mercury:hover {
+    color: #419EBB;
+  }
+
+  .venus:hover {
+    color: #EDA249;
+  }
+
+  .earth:hover {
+    color: #6D2ED5;
+  }
+
+  .mars:hover {
+    color: #D14C32;
+  }
+
+  .jupiter:hover {
+    color: #D83A34;
+  }
+
+  .saturn:hover {
+    color: #CD5120;
+  }
+
+  .uranus:hover {
+    color: #1EC1A2;
+  }
+
+  .neptune:hover {
+    color: #2D68F0;
+  }
+}

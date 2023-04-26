@@ -1,0 +1,133 @@
+.planet-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 24px;
+  /* position: relative; */
+}
+
+.planet-image {
+  width: 250px;
+  margin-top: 40px;
+  user-select: none;
+}
+
+.planet-description,
+.planet-title,
+.source-wrapper,
+.wiki-link {
+  color: var(--white);
+}
+
+.planet-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.planet-description {
+  font-family: "League Spartan";
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.source-wrapper {
+  font-family: "League Spartan";
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.wiki-link {
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.planet-extra-image {
+  position: absolute;
+  width: 80px;
+  top: 220px;
+}
+
+.planet-specification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.planet-title-description-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-and-extra-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 330px;
+}
+
+@media (min-width: 768px) {
+  .description-and-tabs-desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 330px;
+  }
+
+  .planet-title-description-source {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+  }
+
+  .planet-info-container {
+    padding: 24px 45px;
+  }
+
+  .planet-specification-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-and-description-and-tabs-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .planet-title-description-source {
+    width: 90%;
+    min-height: 350px;
+  }
+
+  .description-and-tabs-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .image-and-extra-image {
+    width: 100%;
+  }
+
+  .planet-specification-container {
+    margin-top: 87px;
+  }
+
+}

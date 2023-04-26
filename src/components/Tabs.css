@@ -1,0 +1,28 @@
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 0px 24px;
+}
+
+.tab {
+  font-family: "League Spartan";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.93px;
+  padding-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  user-select: none;
+}
+
+.active {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+
+@media (min-width: 768px) {
+  .tabs-container {
+    display: none;
+  }
+}

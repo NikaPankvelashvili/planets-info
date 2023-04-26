@@ -1,0 +1,48 @@
+.not-found-page-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -10px;
+  align-items: flex-end;
+  height: 400px;
+  flex-direction: column;
+}
+
+.astronaut {
+  width: 200px;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+.lost-in-space-text {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error-message {
+  font-size: small;
+  padding-top: 30px;
+}
+
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
