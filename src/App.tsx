@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Navigate, createHashRouter } from 'react-router-dom';
+import { createRoutesFromElements, RouterProvider, Route, Navigate, createHashRouter } from 'react-router-dom';
 import Header from './components/Header';
 import PlanetPage from './components/PlanetPage';
 import data from './data'
