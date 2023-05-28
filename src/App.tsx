@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Navigate } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Navigate, createHashRouter } from 'react-router-dom';
 import Header from './components/Header';
 import PlanetPage from './components/PlanetPage';
 import data from './data'
@@ -7,11 +7,11 @@ import NotFound from './components/NotFound';
 
 
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<><Header /></>}>
       <Route path='/' element={<Navigate to={"/mercury/overview"} />} />
-      <Route path='/planets-info' element={<Navigate to={"/mercury/overview"} />} />
+      {/* <Route path='/planets-info' element={<Navigate to={"./mercury/overview"} />} /> */}
 
       <Route path='mercury' element={<PlanetPage color='#419EBB' data={data[0]} />} >
         <Route path='/mercury' element={<Navigate to={"/mercury/overview"} />} />
